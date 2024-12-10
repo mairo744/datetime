@@ -42,7 +42,7 @@ class DateTime extends DateTimeImmutable implements DateTimeInterface
     /**
      * @throws Exception
      */
-    public static function fromString(string $time, DateTimeZone $timezone = null): static
+    public static function fromString(string $time, ?DateTimeZone $timezone = null): static
     {
         $dateTime = parent::createFromInterface(new \DateTime($time, $timezone));
         \assert($dateTime instanceof static);
@@ -53,7 +53,7 @@ class DateTime extends DateTimeImmutable implements DateTimeInterface
     /**
      * @throws Exception
      */
-    public static function fromTimestamp(int $timestamp, DateTimeZone $timezone = null): static
+    public static function fromTimestamp(int $timestamp, ?DateTimeZone $timezone = null): static
     {
         $dateTime = static::createFromFormat('U', (string) $timestamp);
         \assert(false !== $dateTime);
@@ -63,7 +63,7 @@ class DateTime extends DateTimeImmutable implements DateTimeInterface
             : $dateTime->inDefaultTimezone();
     }
 
-    public static function fromFloatTimestamp(float $timestamp, DateTimeZone $timezone = null): static
+    public static function fromFloatTimestamp(float $timestamp, ?DateTimeZone $timezone = null): static
     {
         $integer = floor($timestamp);
         $fract = fmod($timestamp, 1);
@@ -83,7 +83,7 @@ class DateTime extends DateTimeImmutable implements DateTimeInterface
     public static function createFromFormat(
         string $format,
         string $datetime,
-        DateTimeZone $timezone = null
+        ?DateTimeZone $timezone = null
     ): static|false {
         return parent::createFromFormat($format, $datetime, $timezone);
     }
