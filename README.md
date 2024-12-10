@@ -36,19 +36,3 @@ echo json_encode($now);                               // "2016-05-20 14:30:54"
 ```
 
 
-
-[badge-source]: https://img.shields.io/badge/source-pauci/datetime-blue.svg?style=flat-square
-[badge-php]: https://img.shields.io/packagist/php-v/pauci/datetime?style=flat-square
-[badge-release]: https://img.shields.io/packagist/v/pauci/datetime.svg?style=flat-square&label=release
-[badge-build]: https://img.shields.io/github/workflow/status/pauci/datetime/Continuous%20Integration?style=flat-square
-[badge-coverage]: https://img.shields.io/codecov/c/github/pauci/datetime?style=flat-square&token=KmPSlqBuuG
-[badge-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[badge-downloads]: https://img.shields.io/packagist/dt/pauci/datetime.svg?style=flat-square
-
-[source]: https://github.com/pauci/datetime
-[php]: https://php.net
-[release]: https://packagist.org/packages/pauci/datetime
-[build]: https://github.com/pauci/datetime/actions?query=workflow%3A%22Continuous+Integration%22
-[coverage]: https://codecov.io/gh/pauci/datetime
-[license]: https://github.com/pauci/datetime/blob/master/LICENSE
-[downloads]: https://packagist.org/packages/pauci/datetime
